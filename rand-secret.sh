@@ -45,8 +45,8 @@ while true; do
   printf "\n"
 
   if [[ "$value" == "?" ]]; then
-    read -rp "    Length [32]: " length_input
-    length="${length_input:-32}"
+    read -rp "    Length [24]: " length_input
+    length="${length_input:-24}"
     if ! [[ "$length" =~ ^[0-9]+$ ]] || [[ "$length" -eq 0 ]]; then
       err "Length must be a positive integer."
     fi
@@ -97,3 +97,4 @@ fi
 printf "\n"
 success "Secret '${secret_name}' created successfully."
 printf "\n"
+
