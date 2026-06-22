@@ -6,6 +6,6 @@ This is just a simple script which helps the user create a Kubernetes secret one
 
 Run the script like any other shell script
 
-  ./rand-secret.sh
+    ./rand-secret.sh
 
 The script will guide you through the process of selecting your secret's name, namespace (defaults to the current kubectl config context default), and key-value pairs. Type `?` for a value to select a random string and it will ask for how long you'd like it to be. The default is 24 characters.
