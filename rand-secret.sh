@@ -40,7 +40,7 @@ while true; do
     continue
   fi
 
-  # -s suppresses echoing — good practice for secrets
+  # -s suppresses echoing, which is good practice for secrets
   read -rsp "  Value for '${key}' (or '?' for random): " value
   printf "\n"
 
